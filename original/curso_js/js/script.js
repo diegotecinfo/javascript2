@@ -1,4 +1,5 @@
 
+/*
 // Tipo de dados null, undefined
 
 //Undefined
@@ -19,3 +20,9 @@ console.log(temperatura)
 console.log(temperatura === undefined)
 
 console.log(typeof temperatura)
+*/
+
+var caixa_conteudo = document.getElementById("caixa_azul").innerHTML;
+console.log(caixa_conteudo)
+
+document.getElementById("caixa_amarela").innerHTML = `<h1>${caixa_conteudo}`
