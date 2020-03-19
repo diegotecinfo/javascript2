@@ -27,7 +27,7 @@ var caixa_conteudo = document.getElementById("caixa_azul").innerHTML;
 console.log(caixa_conteudo)
 
 document.getElementById("caixa_amarela").innerHTML = `<h1>${caixa_conteudo}`
-*/
+
 
 //AULA FUNCOES
 function soma_numeros() {
@@ -46,4 +46,17 @@ function soma_args(num1, num2) {
 
 console.log(soma_args(10,40))
 
-// 11:41 minutos, exercicio funcao calculo de imc
+*/
+
+//EXERCICIO IMC
+function calc_imc(peso, altura) {
+    var imc = peso / (altura * altura)
+    return imc
+}
+
+var meu_peso = parseFloat(document.getElementById("peso").innerHTML)
+var minha_altura = parseFloat(document.getElementById("altura").innerHTML)
+
+var meu_imc = calc_imc(meu_peso, minha_altura)
+
+document.getElementById("imc").innerHTML = meu_imc.toFixed(2)
